@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --bg-body: #F0F2F5;
+  --font-body: "Noto Sans", system-ui, sans-serif;
+  --font-color: #444;
+  --height-header: 4rem; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-body);
+  font-family: var(--font-body); }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.container {
+  width: 95%;
+  margin: 0 auto; }
+  @media screen and (min-width: 640px) {
+    .container {
+      max-width: 640px; } }
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px; } }
+  @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1024px; } }
+  @media screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px; } }
+  @media screen and (min-width: 1536px) {
+    .container {
+      max-width: 1536px; } }
+
+.header {
+  background-color: #FFF;
+  height: var(--height-header); }
+  .header .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header .nav__menu {
+    list-style: none;
+    background-color: #34495E;
+    position: absolute;
+    top: var(--height-header);
+    right: 0;
+    height: calc(100vh - var(--height-header));
+    width: 100%;
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      .header .nav__menu {
+        background-color: transparent;
+        position: static;
+        top: auto;
+        right: auto;
+        height: auto;
+        width: auto;
+        display: flex;
+        gap: 1em; }
+        .header .nav__menu__item:last-of-type .nav__menu__link {
+          background-color: transparent;
+          color: var(--font-color);
+          border: 1px solid #34495E; }
+          .header .nav__menu__item:last-of-type .nav__menu__link:hover {
+            background-color: #2b3c4e;
+            color: #FFF; } }
+    .header .nav__menu__link {
+      display: block;
+      padding: 1em 2em;
+      background-color: #34495E;
+      color: #FFF;
+      text-decoration: none;
+      font-weight: 500; }
+      .header .nav__menu__link:hover {
+        background-color: #2b3c4e; }
+      @media screen and (min-width: 1024px) {
+        .header .nav__menu__link {
+          display: inline-block;
+          padding: 0.50em 1.50em; } }
+  .header .nav__button {
+    cursor: pointer;
+    display: block;
+    height: 2em;
+    width: 2.5em;
+    background: linear-gradient(to bottom, #444 0%, #444 20%, transparent 20%, transparent 40%, #444 40%, #444 60%, transparent 60%, transparent 80%, #444 80%, #444 100%); }
+    @media screen and (min-width: 1024px) {
+      .header .nav__button {
+        display: none; } }
+  .header .nav__input:checked ~ .nav__menu {
+    display: block; }

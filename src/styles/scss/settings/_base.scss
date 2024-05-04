@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	// min-height: calc(100vh - var(--height-header));
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--bg-body);
+	font-family: var(--font-body);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
