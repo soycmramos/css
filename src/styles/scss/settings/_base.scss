@@ -7,13 +7,13 @@
 }
 
 body {
-	// min-height: calc(100vh - var(--height-header));
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 
 	background-color: var(--bg-body);
 	font-family: var(--font-body);
+	color: var(--font-color);
 }
 
 img {
@@ -23,8 +23,5 @@ img {
 
 a {
 	text-decoration: none;
-
-	&:hover {
-		text-decoration: underline;
-	}
+	color: var(--font-color);
 }

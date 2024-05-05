@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 :root {
 	--bg-body: #F0F2F5;
 	--font-body: "Noto Sans", system-ui, sans-serif;
-	--font-color: #444;
+	--font-color: #404145;
 	--height-header : 4rem;
 }
 
-$primary: #34495E;
+$primary: #273746;
+$success: #239B56;
+$warning: #B7950B;
+$danger: #B03A2E;
+$info: #1F618D;
+$default: #B3B6B7;
 
 $breakpoints: (
 	sm: 640px,

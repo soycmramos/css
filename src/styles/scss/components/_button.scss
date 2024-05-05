@@ -1,0 +1,215 @@
+@mixin button-primary {
+	@include button;
+	background-color: $primary;
+	border-color: $primary;
+	color: #FFF;
+
+	&:hover {
+		background-color: darken($primary, 5);
+		border-color: darken($primary, 5);
+	}
+
+	&:active {
+		background-color: darken($primary, 10);
+		border-color: darken($primary, 10);
+	}
+}
+
+@mixin button-outline-primary {
+	@include button;
+	background-color: transparent;
+	border-color: $primary;
+	color: $primary;
+
+	&:hover {
+		background-color: $primary;
+		border-color: $primary;
+		color: #FFF;
+	}
+
+	&:active {
+		background-color: darken($primary, 5);
+		border-color: darken($primary, 5);
+	}
+}
+
+@mixin button-default {
+	@include button;
+	background-color: $default;
+	border-color: $default;
+
+	&:hover {
+		background-color: darken($default, 5);
+		border-color: darken($default, 5);
+	}
+
+	&:active {
+		background-color: darken($default, 10);
+		border-color: darken($default, 10);
+	}
+}
+
+@mixin button-outline-default {
+	@include button;
+	background-color: transparent;
+	border-color: $default;
+
+	&:hover {
+		background-color: $default;
+		border-color: $default;
+	}
+
+	&:active {
+		background-color: darken($default, 5);
+		border-color: darken($default, 5);
+	}
+}
+
+@mixin button {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid var(--font-color);
+	color: var(--font-color);
+	font-weight: 500;
+	padding: 0.5em 1em;
+}
+
+@mixin button-warning {
+	@include button;
+	background-color: $warning;
+	border-color: $warning;
+	color: #FFF;
+
+	&:hover {
+		background-color: darken($warning, 5);
+		border-color: darken($warning, 5);
+	}
+
+	&:active {
+		background-color: darken($warning, 10);
+		border-color: darken($warning, 10);
+	}
+}
+
+@mixin button-outline-warning {
+	@include button;
+	background-color: transparent;
+	border-color: $warning;
+	color: $warning;
+
+	&:hover {
+		background-color: $warning;
+		border-color: $warning;
+		color: #FFF;
+	}
+
+	&:active {
+		background-color: darken($warning, 5);
+		border-color: darken($warning, 5);
+	}
+}
+
+@mixin button-danger {
+	@include button;
+	background-color: $danger;
+	border-color: $danger;
+	color: #FFF;
+
+	&:hover {
+		background-color: darken($danger, 5);
+		border-color: darken($danger, 5);
+	}
+
+	&:active {
+		background-color: darken($danger, 10);
+		border-color: darken($danger, 10);
+	}
+}
+
+@mixin button-outline-danger {
+	@include button;
+	background-color: transparent;
+	border-color: $danger;
+	color: $danger;
+
+	&:hover {
+		background-color: $danger;
+		border-color: $danger;
+		color: #FFF;
+	}
+
+	&:active {
+		background-color: darken($danger, 5);
+		border-color: darken($danger, 5);
+	}
+}
+
+@mixin button-success {
+	@include button;
+	background-color: $success;
+	border-color: $success;
+	color: #FFF;
+
+	&:hover {
+		background-color: darken($success, 5);
+		border-color: darken($success, 5);
+	}
+
+	&:active {
+		background-color: darken($success, 10);
+		border-color: darken($success, 10);
+	}
+}
+
+@mixin button-outline-success {
+	@include button;
+	background-color: transparent;
+	border-color: $success;
+	color: $success;
+
+	&:hover {
+		background-color: $success;
+		border-color: $success;
+		color: #FFF;
+	}
+
+	&:active {
+		background-color: darken($success, 5);
+		border-color: darken($success, 5);
+	}
+}
+
+@mixin button-info {
+	@include button;
+	background-color: $info;
+	border-color: $info;
+	color: #FFF;
+
+	&:hover {
+		background-color: darken($info, 5);
+		border-color: darken($info, 5);
+	}
+
+	&:active {
+		background-color: darken($info, 10);
+		border-color: darken($info, 10);
+	}
+}
+
+@mixin button-outline-info {
+	@include button;
+	background-color: transparent;
+	border-color: $info;
+	color: $info;
+
+	&:hover {
+		background-color: $info;
+		border-color: $info;
+		color: #FFF;
+	}
+
+	&:active {
+		background-color: darken($info, 5);
+		border-color: darken($info, 5);
+	}
+}
